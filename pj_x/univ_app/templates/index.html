@@ -1,0 +1,70 @@
+{% extends "base2.html" %}
+{% block main %}
+{% load static %}
+<div class="row">
+    <div class="col-sm">
+
+      <div class="text-center alert alert-secondary" role="alert">
+        大学名を複数入力するときは、<br />改行して入力してください。
+      </div>
+
+        <h2 class="text-center">大学名</h2>
+
+        {% for error in form.non_field_errors %}
+        <div class="alert alert-danger">
+          {{ error }}
+        </div>
+        {% endfor %}
+
+        <form method="post">
+            {% csrf_token %}
+            {% for field in form %}
+            <p>
+                <label>{{ field.label }}</label>
+                {{ field }}
+            </p>
+            {% endfor %}
+            <div class="text-center">
+              <input type="submit" value="    判定    " class="btn btn-success" />
+            </div>
+        </form>
+    </div>
+    <div class="col-sm">
+        <h2 class="my-4 text-center">判定結果</h2>
+        {% if koku_list %}
+        <h5 class="my-4 text-center">国立大学 一覧</h5>
+        {% endif %}
+        {% for koku in koku_list %}
+        <p class="text-center">{{ koku }}</p>
+        {% endfor %}
+
+        {% if kou_list %}
+        <h5 class="my-4 text-center">公立大学 一覧</h5>
+        {% endif %}
+        {% for kou in kou_list %}
+        <p class="text-center">{{ kou }}</p>
+        {% endfor %}
+
+        {% if shiri_list %}
+        <h5 class="my-4 text-center">私立大学 一覧</h5>
+        {% endif %}
+        {% for shiri in shiri_list %}
+        <p class="text-center">{{ shiri }}</p>
+        {% endfor %}
+
+        {% if mongai_list %}
+        <h5 class="my-4 text-center">文部科学省所管外の大学校 一覧</h5>
+        {% endif %}
+        {% for mon in mongai_list %}
+        <p class="text-center">{{ mon }}</p>
+        {% endfor %}
+
+        {% if new_text %}
+        <h5 class="my-4 text-center">判定一覧</h5>
+        {% endif %}
+        {% for fielda in new_text %}
+        <p class="text-center">{{ fielda }}</p>
+        {% endfor %}
+    </div>
+</div>
+{% endblock %}

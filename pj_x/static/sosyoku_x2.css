@@ -1,0 +1,583 @@
+body {
+  font-family: "Avenir Next";
+}
+
+li {
+  list-style: none;
+  /* 以下の2行を削除してください */
+
+}
+
+* {
+
+    margin: 0px;
+
+    padding: 0px;
+
+}
+
+.body {
+  background-color: #000000
+}
+
+
+.header {
+  position: fixed;
+  z-index: 2;
+  top: 0;
+  background-color: #2b2b2b;
+  color: #2b2b2b;
+  height: 210px;
+}
+
+.logo{
+  height: 221px;
+}
+
+
+
+.header-logo {
+  height: auto;
+  width: auto;
+}
+
+/* header-listの中のli要素にのみ適用したいCSSを記述してください */
+.header-list li {
+  float: left;
+  padding: 30px 20px;
+}
+
+
+
+
+.footer_li {
+  font-size: 50px;
+}
+
+.main {
+  background-color: #000000;
+  height: -webkit-calc(14500px)
+}
+
+.drstone {
+  font-size: 75px;
+  width: 970px;
+  height: 920px;
+  background-color: #000000 ;
+}
+
+.drstone_detail {
+  font-size: 75px;
+  width: 970px;
+  height: 1000px;
+  background-color: #000000 ;
+}
+
+.a {
+  color: #fff;
+  background: #383c3c;
+  padding: 10px 10px ;
+  display: inline-block;
+  border-radius: 5px;
+  text-decoration: none;
+}
+
+.a1 {
+  font-size: 50px;
+  color: #c0c6c9;
+  /*background: #000000;*/
+  padding: 5px 1px;
+  /*display: inline-block;*/
+  border-radius: 5px;
+  text-decoration: none;
+}
+
+.img {
+  width: 100%;
+  object-fit: cover;
+}
+
+
+.footer1 {
+  background-color: #000000;
+  height: 800px;
+}
+
+.footer-logo {
+  font-size: 80px;
+}
+
+.toukou {
+  font-size: 50px;
+}
+
+.main_mae {
+  background-color: #2b2b2b;
+  height: 360px;
+}
+
+.drstone12 {
+  font-size: 70px;
+  width: 630px;
+  height: 650px
+  }
+
+
+  .a2 {
+    color: #fff;
+    text-decoration: none;
+    white-space: nowrap;
+  }
+  .li1 {
+    margin: 2rem 0;
+  }
+
+  .li2 {
+    background-color: #2b2b2b;
+
+  }
+
+.li3{
+  color: white;
+  font-size: 80px;
+}
+
+  /* ボタン */
+  .btn-menu {
+    position: absolute;
+    z-index: 1;
+    top: 220px;
+    right: 0;
+    background: transparent;
+    padding: 0;
+    border: none;
+    font-size: 1rem;
+    cursor: pointer;
+
+  }
+
+  .menu_btn {
+    right: 0;
+    height: auto;
+    width: 20%;
+  }
+
+
+  /* メニュー */
+  .nav1 {
+    background: #16160e;
+    position: absolute;
+    z-index: 1;
+    top: 360px;
+    right: 0;
+    overflow-x: hidden;
+    text-align: center;
+    width: 0;
+    transition: .5s;
+    font-size: 60px;
+  }
+  /* メニューを開いた時 */
+  .nav1.open-menu {
+    width: 80%;
+  }
+
+
+  .brightness{
+  	filter: brightness(1);
+  }
+
+  .brightness.open-menu2 {
+    filter: brightness(0.15);
+  }
+
+
+
+
+  .list-group{
+      /*display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      background-color: aliceblue;
+      width: 100%;
+      margin: 10px auto;
+      padding: 20px;
+      list-style: none;
+      text-align: center;*/
+  }
+
+  .pagination{
+      list-style: none;
+      display: flex;
+      justify-content: center;
+      padding: 5px;
+      width: 100.4%;
+      height: 200px;
+      background-color: #000000;
+
+  }
+
+  .pagination li{
+      margin: 5px;
+      border: 3px solid #2b2b2b;
+  }
+
+  .pagination a{
+      display: block;
+      text-decoration: none;
+      color: white;
+      line-height: 175px;
+      font-size: 60px;
+      padding: 0px;
+      height: 170px;
+      width: 130px;
+
+  }
+
+  .pagination a:hover{
+      background-color: #f08300;
+      color: aliceblue;
+  }
+
+  .active{
+      background-color: #f08300;
+  }
+
+.h1 {
+  color: white;
+  font-size: 110px;
+}
+
+.p {
+  color: white;
+  font-size: 50px;
+}
+
+.h2 {
+  color: white;
+  font-size: 80px;
+}
+
+.kiyaku {
+  height: 4000px
+  background-color: #000000;
+}
+
+.pag {
+
+  top: 50px;
+}
+
+.texth {
+  font-size: 70px;
+}
+
+.text11 {
+  font-size: 50px;
+  width: 900px;
+  height: 100px;
+}
+
+.text12 {
+  font-size: 60px;
+  width: 500px;
+  height: 100px;
+  position: absolute;
+  left: 25%;
+}
+
+.keikoku {
+  font-size: 50px;
+
+}
+
+
+/* 008 */
+.button008 a {
+    background: #1e1e1e;
+    position: relative;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin: 0 auto;
+    max-width: 240px;
+    max-height: 140px;
+    padding: 10px 25px;
+    color: #313131;
+    transition: 0.3s ease-in-out;
+    font-weight: 500;
+    z-index:0;
+}
+.button008 a:before {
+    content: "";
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    width: 0;
+    display: block;
+    background: #111111;
+    transition: .3s;
+    left:0;
+}
+.button008 a:hover {
+    color: #FFF;
+}
+.button008 a:hover:before {
+    width: 100%;
+    z-index: -1;
+}
+
+
+.infinity-1 {
+	position: relative;
+	width: 200px;
+	height: 100px;
+}
+
+.infinity-1::before {
+	content: "";
+	width: 55px;
+	height: 55px;
+	position: absolute;
+	top: 0;
+	left: 0;
+	border: 20px solid #00bfff;
+	border-radius: 50px 50px 50px 0;
+	transform: rotate(-135deg);
+}
+
+.infinity-1::after {
+	content: "";
+	width: 55px;
+	height: 55px;
+	position: absolute;
+	top: 0;
+	right: 0;
+	border: 20px solid #00bfff;
+	border-radius: 50px 50px 50px 0;
+	transform: rotate(45deg);
+}
+
+.infinity-2 {
+  position: relative;
+  width: 200px;
+  height: 100px;
+}
+
+.infinity-2::before {
+  content: "";
+  width: 55px;
+  height: 55px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  border: 20px solid #ff99cc;
+  border-radius: 50px 50px 0 50px;
+  transform: rotate(-45deg);
+}
+
+.infinity-2::after {
+  content: "";
+  width: 55px;
+  height: 55px;
+  position: absolute;
+  top: 0;
+  right: 0;
+  border: 20px solid #ff1493;
+  border-radius: 50px 50px 50px 0;
+  transform: rotate(45deg);
+}
+
+
+.navdiv{
+  width: 200px;
+  height: 140px;
+}
+
+.navp {
+  color: #fe9906;
+  font-size: 50px;
+}
+
+.form-control {
+  font-size: 50px;
+  width: 500px;
+  height: 100px;
+}
+
+.texth2 {
+  font-size: 50px;
+}
+.center {
+  position: absolute;
+  left: 50%;
+  transform: translate(-50%);
+  -webkit-transform: translate(-50%);
+  -ms-transform: translate(-50%);
+
+}
+
+
+.center_logo {
+  position: absolute;
+  left: 50%;
+  transform: translate(-50%);
+  -webkit-transform: translate(-50%);
+  -ms-transform: translate(-50%);
+  width: 900px;
+
+}
+
+
+.create_css {
+  background-color: #000000;
+  height: -webkit-calc(1500px)
+}
+
+.user_name_p {
+  color: white;
+  font-size: 40px;
+  position: absolute;
+  left: 10%;
+}
+
+.btn{
+  position: absolute;
+  left: 0;
+  right: 0;
+  margin: auto;
+    font-size: 100px;
+    width:800px;
+    height:130px;
+    line-height:130px;
+}
+.btn a{
+    display:block;
+    width:100%;
+    height:100%;
+    text-decoration: none;
+    background:#FFA521;
+    text-align:center;
+    color:#FFFFFF;
+    font-size:30px;
+    font-weight:bold;
+    border-radius:13px;
+    -webkit-border-radius:13px;
+    -moz-border-radius:13px;
+    text-shadow:0px 0px 0px #FFFFFF ;
+}
+.btn a:hover{
+    background:#000000;
+    color:#FF9717;
+    margin-left:5px;
+    margin-top:5px;
+    box-shadow:none;
+}
+
+.font12 {
+  font-size: 80px
+}
+
+.btn2{
+  right: 50%;
+  transform: translate(+65%);
+
+  margin: auto;
+  font-size: 50px;
+  width:150px;
+  height:70px;
+  line-height:70px;
+}
+
+.input_css{
+  width: 700px;
+}
+
+.num_css_0 {
+  background-color: #000000;
+  height: -webkit-calc(1200px)
+}
+
+.num_css_1 {
+  background-color: #000000;
+  height: -webkit-calc(1404px)
+}
+
+.num_css_0 {
+  background-color: #000000;
+  height: -webkit-calc(1500px)
+}
+
+.num_css_1 {
+  background-color: #000000;
+  height: -webkit-calc(2000px)
+}
+
+.num_css_2 {
+  background-color: #000000;
+  height: -webkit-calc(2900px)
+}
+
+.num_css_3 {
+  background-color: #000000;
+  height: -webkit-calc(3800px)
+}
+
+.num_css_4 {
+  background-color: #000000;
+  height: -webkit-calc(4700px)
+}
+
+.num_css_5 {
+  background-color: #000000;
+  height: -webkit-calc(5600px)
+}
+
+.num_css_6 {
+  background-color: #000000;
+  height: -webkit-calc(6500px)
+}
+
+.num_css_7 {
+  background-color: #000000;
+  height: -webkit-calc(7400px)
+}
+
+.num_css_8 {
+  background-color: #000000;
+  height: -webkit-calc(8300px)
+}
+
+.num_css_9 {
+  background-color: #000000;
+  height: -webkit-calc(9200px)
+}
+
+.num_css_10 {
+  background-color: #000000;
+  height: -webkit-calc(10100px)
+}
+
+.num_css_11 {
+  background-color: #000000;
+  height: -webkit-calc(11000px)
+}
+
+.num_css_12 {
+  background-color: #000000;
+  height: -webkit-calc(11900px)
+}
+
+.num_css_13 {
+  background-color: #000000;
+  height: -webkit-calc(12800px)
+}
+
+.num_css_14 {
+  background-color: #000000;
+  height: -webkit-calc(13700px)
+}
+
+.num_css_15 {
+  background-color: #000000;
+  height: -webkit-calc(14800px)
+}
